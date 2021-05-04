@@ -12,8 +12,6 @@ const connectDB = async () => {
             useCreateIndex: true
 
         })
-        console.log(process.env.MONGO_URI+'MONFO IRIRIR');
-
         console.log(`MongoDB connected : ${con.connection.host}`);
     }catch(err){
         console.log(err);
