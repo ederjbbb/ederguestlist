@@ -33,4 +33,4 @@ app.use('/js', express.static(path.resolve(__dirname, "assets/js")))
 // load routers
 app.use('/', require('./server/routes/router'))
 
-app.listen(process.env.POST || 3000);
+app.listen(process.env.PORT || 3000);
